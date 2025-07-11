@@ -1,4 +1,4 @@
-# stage and commit changes in one step
+### stage and commit changes in one step
 git commit -am "<changes made>"
 
 git log
@@ -22,21 +22,21 @@ git pull --all && clear  # git pull --all = fetches and merges from all remote r
 
 git revert 1d4a8cb # reverts specific commit - must follow with git push to update remote repository
 
-# checks available branches
+### checks available branches
 git branch
-# creates a new branch
+### creates a new branch
 git branch <branch_name>
-# branch naming: type of change/change number/short name
+### branch naming: type of change/change number/short name
 git checkout -b bug/123/menu-issue
 git checkout -b feat/124/new-email-feature
-# switches to branch <branch_name>
+### switches to branch <branch_name>
 git checkout <branch_name
-# create and switch to a new branch in one step
+### create and switch to a new branch in one step
 git checkout -b <branch_name>
-# pushes/set-ups the local branch in the remote repository
+### pushes/set-ups the local branch in the remote repository
 git push --set-upstream origin <branch_name>
 
-# creates and merges a pull request using GitHub
+### creates and merges a pull request using GitHub
 1. Pull requests
 2. New pull request
 3. Select branches to merge (main and <branch_name>)
@@ -50,7 +50,7 @@ checks if the local branch was merged into main:
 git pull
 git merge-base --is-ancestor <branch_name> main && echo "Merged" || echo "Not merged"
 
-# solving a merge conflict (default behavior)
+### solving a merge conflict (default behavior)
 git config pull.rebase false
 ... followed by:
 git pull  # accept current change (local) or incoming change (remote) - resolve merge conflict
@@ -60,7 +60,7 @@ git push
 
 ---
 
-Note: Reverts are risky - inform team in a collaborative enviroenment. Preferably to fix the issue than to revert AND if possible to perform the revert on a feature branch, test it and then merge it into the main branch
+**Note:** Reverts are risky - inform team in a collaborative enviroenment. Preferably to fix the issue than to revert AND if possible to perform the revert on a feature branch, test it and then merge it into the main branch
 add `.gitkeep` file to empty folders you want git to track
 controls which files are shown or hidden in our local git repository by edititng this JSON object:
   "files.exclude": {
