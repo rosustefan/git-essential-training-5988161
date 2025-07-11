@@ -30,7 +30,7 @@ git branch <branch_name>
 git checkout -b bug/123/menu-issue
 git checkout -b feat/124/new-email-feature
 ### Switches to branch <branch_name>
-git checkout <branch_name
+git checkout <branch_name>
 ### Create and switch to a new branch in one step
 git checkout -b <branch_name>
 ### Pushes/set-ups the local branch in the remote repository
