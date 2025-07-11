@@ -1,5 +1,5 @@
 ### Stage and commit changes in one step
-git commit -am "<changes made>"
+git commit -am "changes made"
 
 git log
 git log -p  # detailed log
