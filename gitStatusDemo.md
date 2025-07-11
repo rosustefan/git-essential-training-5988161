@@ -1,2 +1,3 @@
-This is a line of text.
-LinkedIn Learning ftw!
+This is a line of better text.
+
+Un melc trece strada.
