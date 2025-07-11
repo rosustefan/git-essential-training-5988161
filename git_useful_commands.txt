@@ -1,3 +1,6 @@
+# stage and commit changes in one step
+git commit -am "<changes made>"
+
 git log
 git log -p  # detailed log
 git log --oneline
@@ -23,8 +26,13 @@ git revert 1d4a8cb # reverts specific commit - must follow with git push to upda
 git branch
 # creates a new branch
 git branch <branch_name>
+# branch naming: type of change/change number/short name
+git checkout -b bug/123/menu-issue
+git checkout -b feat/124/new-email-feature
 # switches to branch <branch_name>
 git checkout <branch_name
+# create and switch to a new branch in one step
+git checkout -b <branch_name>
 # pushes/set-ups the local branch in the remote repository
 git push --set-upstream origin <branch_name>
 
